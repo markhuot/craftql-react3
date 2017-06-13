@@ -1,0 +1,15 @@
+.container {
+  float: left;
+  width: 100%;
+}
+
+.container:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.content {
+  width: 40%;
+  float: right;
+}

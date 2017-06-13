@@ -1,0 +1,4 @@
+.container {
+  background: url('./Background.jpg') no-repeat center center;
+  background-size: cover;
+}

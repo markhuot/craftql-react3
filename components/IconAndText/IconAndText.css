@@ -1,0 +1,17 @@
+.block {
+
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.body {
+  color: #8c8f94;
+  font-size: 18px;
+}
+
+.body p + p {
+  margin-top: 30px;
+}

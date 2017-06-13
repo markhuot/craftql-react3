@@ -1,0 +1,13 @@
+.button {
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  /*line-height: 40px;*/
+  text-decoration: none;
+}
+
+.primary {
+  background: #267df4;
+  color: #fff;
+  border-color: transparent;
+}

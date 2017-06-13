@@ -1,0 +1,38 @@
+{
+  "name": "craftql-react3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compileBrowser": "webpack --progress --hide-modules  --config=webpack.browser.config.js",
+    "watchBrowser": "yarn compileBrowser -- --watch",
+    "compileServer": "webpack --progress --hide-modules  --config=webpack.server.config.js",
+    "watchServer": "yarn compileServer -- --watch",
+    "serve": "yarn compileServer && nodemon storage/server.bundle.js -w storage/server.bundle.js",
+    "dev": "npm-run-all --parallel watchServer watchBrowser serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "css-loader": "^0.28.4",
+    "cssnano": "^3.10.0",
+    "express": "^4.15.3",
+    "file-loader": "^0.11.2",
+    "isomorphic-style-loader": "^2.0.0",
+    "nodemon": "^1.11.0",
+    "postcss-loader": "^2.0.5",
+    "postcss-modules": "^0.8.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "^2.6.1",
+    "webpack-dev-middleware": "^1.10.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.0.2"
+  }
+}

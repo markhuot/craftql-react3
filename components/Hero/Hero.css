@@ -1,0 +1,40 @@
+.container {
+  min-height: 900px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container:after {
+  content: '';
+  position: absolute;
+  bottom: -315px;
+  left: 50%;
+  width: 373px;
+  transform: translateX(-50%);
+  height: 763px;
+  background: url('./iPhone.png') no-repeat top center;
+  border-radius: 60px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+
+.content {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 100px 50px;
+}
+
+.heading {
+  font-family: Comfortaa;
+}
+
+.heading {
+  composes: xxl from '../_type/sizes.css';
+}
+
+.subhead {
+  composes: xl from '../_type/sizes.css';
+  color: #8c8f94;
+  line-height: 1.4;
+  font-weight: 300;
+}

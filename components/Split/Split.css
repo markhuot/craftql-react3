@@ -1,0 +1,39 @@
+.split {
+  width: 100%;
+  /*float: left;*/
+}
+
+.split > * {
+  /*float: left;*/
+  display: inline-block;
+}
+
+/*.split:after {
+  display: table;
+  overflow: hidden;
+  clear: both;
+}*/
+
+/*.centered {
+  text-align: center;
+}*/
+
+[data-width="1/2"] > * {
+  width: 50%;
+}
+
+[data-width="1/3"] > * {
+  width: 33.3333%;
+}
+
+@media (min-width: 700px) {
+  [data-width-at-medium="1/2"] > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 700px) {
+  [data-width-at-large="1/3"] > * {
+    width: 33.3333%;
+  }
+}

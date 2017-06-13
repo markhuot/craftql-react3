@@ -1,0 +1,5 @@
+public/*
+server.bundle.js
+storage/**
+!storage/.gitkeep
+node_modules
